@@ -11,7 +11,7 @@ Python will be used as the initial approach to develop the software.
 
 
 
-<h1>2.- Pygame DXF import module.</h1>
+# 2.- Pygame DXF import module.
 
 Pygame is a Python graphics library that works quite well. Although its primary aim is to serve as a game developing tool, it is widely used for other purposes, as it offers fast graphics, at least as fast as needed for the purpose (well though out, the project is not quite different from a computer game: the system tells the user what happens both by means of the output contacts -input for the PLC- and the screen, and the user -the PLC- answers by telling the system what to do; a kid handling a joystick will do too).
 
@@ -72,3 +72,9 @@ It looks like Autodesk (the company that developed autocad and is the current li
 Apart form the fact that Pygame has no primitive to draw circles (it has one to draw ellipses; a circle has to be drawn as a two equal axis ellipse!) the tool is more than enough for the purpose: the achieved pictures are almost identical to the autocad image. Perhaps because the lack of a circle primitive some times Pygame arcs are drawn shorter than their actual size and do not close well to tangent adjacent tracks; you can notice it on the Pygame side of the above figure: two sidewalks have this fault. 
 
 Although correspondence in between autocad entities and Pygame primitives is almost *biunivocal*, some conversion has been needed to process certain entities: this way, polylines are decomposed into straight tracks and bulges before drawing them (Pygame has no specific primitive for polylines). As hatches and solids are not imported as such, a trick to get a similar effect has been used: the arrow point, for example, is made of parallel polylines of uniformly decreasing length.
+
+
+
+# 5.- EGR data base.
+
+All the imported elements are converted to Python *entities* (objects of different classes: lines, circles, arcs, ...) so that they can be lately used -as EIDE_EGR does- in the *scenario* to constrain -or facilitate- further model functioning.
