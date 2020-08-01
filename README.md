@@ -23,7 +23,9 @@ Hence, as a by-product a Pygame DXF import module is currently being written (in
 
 The import module is in its beta version.
 
-
+![figura 1](https://user-images.githubusercontent.com/64075009/89097302-237fcd00-d3de-11ea-8714-1d81108417d7.jpg)
+Figure 1. Pygame import from Autocad via DXF
+		
  ## 2.1.-Specs.
  
 These are the initial specifications for the module under development:
