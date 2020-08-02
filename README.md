@@ -55,7 +55,7 @@ These are the initial specifications for the module under development:
     
    7. The user may set a zoom factor (number, left-right adjusted, top-bottom adjusted) and the center point of the model to control the appearance of the Pygame image. Pygame will create a jpg file with the image it generates for use in subsequent sessions. 
    
-   8. Data used to draw the picture is sotred in the EGR data base, so that it can be used lately either as a framing or to be edited by adding entities or removing existing ones. 
+   8. Data used to draw the picture is stored in the EGR data base, so that it can be used lately either as a framing or to be edited by adding entities or removing existing ones. 
    
    
 
